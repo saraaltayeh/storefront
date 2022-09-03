@@ -13,26 +13,26 @@ function Categories(props) {
           label="FOOD"
           onClick={() => {
             props.reset();
-            props.changeActive("food");
-            props.filterProduct("food");
+            props.changeActive("Food");
+            props.filterProduct("Food");
             
           }}
         />
         <Tab
-          label="CLOTHES"
+          label="Clothes"
           onClick={() => {
             props.reset();
-            props.changeActive("clothes");
-            props.filterProduct("clothes");
+            props.changeActive("Clothes");
+            props.filterProduct("Clothes");
             
           }}
         />
         <Tab
-          label="ELECTRONIC"
+          label="Electronics"
           onClick={() => {
              props.reset();
-            props.changeActive("electronic");
-            props.filterProduct("electronic");
+            props.changeActive("Electronics");
+            props.filterProduct("Electronics");
            
           }}
         />

@@ -7,13 +7,13 @@ const initialState = {
       },
       {
           normalizedName: "Clothes",
-          displayName: "CLOTHES",
+          displayName: "Clothes",
           description: "Wear Good. Be Good.",
         },
         {
           normalizedName: "Electronics",
-          displayName: "ELECTRONICS",
-          description: "Best electronics Deals & Cheap electronics",
+          displayName: "Electronics",
+          description: "Best Electronics Deals & Cheap Electronics",
         },
     ],
     activeCat:""

@@ -1,3 +1,7 @@
+.productCard{
+    margin: 10px 20px;
+    width: 270px;
+}
 .header{
     background-color: #80787d;
     color: #ffffff;
