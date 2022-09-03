@@ -15,11 +15,6 @@ export default function ProductCard(props) {
 console.log("1111111111",props?.element);
   return (
     <>
-    {/* <div className="product">
-                <br></br>
-             <h1> Welcome to our web site please select catagories </h1>
-             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWHkWSysYLDmDbsYYh8pbordnHytWMHsupIQ&usqp=CAU"alt='hello'></img>
-             </div> */}
 
     <Card className="productCard" size={{ maxWidth: 345 }} >
       <CardHeader

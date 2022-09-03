@@ -1,13 +1,20 @@
 //category association, name, description, price, inventory count
 const  initialState ={
     product: [
-      {
-        cat: "",
-        name: "",
-        description: "",
-        price: "",
-        inventoryCount: "",
-      },]}
+        {
+            cat: "Food",
+            name: "Burger",
+            description: "Amrican burger",
+            price: "5 JD",
+            inventoryCount: "60",
+          },
+          {
+            cat: "Food",
+            name: "Pizza",
+            description: "Italian pizza",
+            price: "7 JD",
+            inventoryCount: "50",
+          },]}
   const member = {
     product: [
       {
