@@ -15,3 +15,8 @@
   text-align: center;  
   margin: 10px 10px 10px 10px;
 }
+
+.productContainer{
+  display: flex;
+  padding-bottom: 60px;
+}

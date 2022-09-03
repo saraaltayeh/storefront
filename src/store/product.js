@@ -11,28 +11,28 @@ const  initialState ={
   const member = {
     product: [
       {
-        cat: "food",
+        cat: "Food",
         name: "Burger",
         description: "Amrican burger",
         price: "5 JD",
         inventoryCount: "60",
       },
       {
-        cat: "food",
+        cat: "Food",
         name: "Pizza",
         description: "Italian pizza",
         price: "7 JD",
         inventoryCount: "50",
       },
       {
-        cat: "clothes",
+        cat: "Clothes",
         name: "Dress",
         description: "long dress and soft",
         price: "20 JD",
         inventoryCount: "200",
       },
       {
-        cat: "electronic",
+        cat: "Electronics",
         name: "Macbook",
         description: "Best laptop in 2022",
         price: "1000",
