@@ -14,6 +14,13 @@ export default function ProductCard(props) {
 
 console.log("1111111111",props?.element);
   return (
+    <>
+    {/* <div className="product">
+                <br></br>
+             <h1> Welcome to our web site please select catagories </h1>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWHkWSysYLDmDbsYYh8pbordnHytWMHsupIQ&usqp=CAU"alt='hello'></img>
+             </div> */}
+
     <Card className="productCard" size={{ maxWidth: 345 }} >
       <CardHeader
       className="header"
@@ -27,8 +34,8 @@ console.log("1111111111",props?.element);
       />
 <CardMedia
         component="img"
-        height="194"
-        image="../productCard/product-pic.png"
+        height="200px"
+        image="https://image.shutterstock.com/image-vector/new-product-poster-banner-greeting-260nw-546097051.jpg"
         alt="product img"
       />
       <CardContent>
@@ -48,5 +55,7 @@ console.log("1111111111",props?.element);
         <IconButton aria-label="share"></IconButton>
       </CardActions>
     </Card>
+    </>
+
   );
 }
