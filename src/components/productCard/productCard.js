@@ -8,11 +8,16 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
+import Button from '@mui/material/Button';
 import "./productCard.css"
+import product from "../../store/product";
+import { connect } from "react-redux";
+import {addToCart} from '../../store/cart'
 
-export default function ProductCard(props) {
+function ProductCard(props) {
 
-console.log("1111111111",props?.element);
+console.log("1111111111",props);
+console.log("55555555",props.cartItems);
   return (
     <>
 
@@ -43,7 +48,16 @@ console.log("1111111111",props?.element);
         <Typography variant="body2" color="text">
           inventoryCount: {`${props?.element?.inventoryCount}`}
         </Typography>
+        <Button
+                    variant="contained"
+                    style={{ width: 100 + '%' }}
+                    onClick={() => {
+                    props.addToCart(props.cartItems);
+                    }}>
+                    ADD TO CART
+                  </Button>
       </CardContent>
+    
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
         </IconButton>
@@ -54,3 +68,12 @@ console.log("1111111111",props?.element);
 
   );
 }
+
+const mapStateToProps = (state) => ({
+    cartItems: state.cartReducer.cartItems,
+  totalCartItems: state.cartReducer.totalCartItems,
+});
+
+const mapDispatchToProps = { addToCart };
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProductCard);

@@ -1,7 +1,7 @@
 import { Tab } from "@mui/material";
 import Box from "@mui/material/Box";
 import { connect } from "react-redux";
-import { changeActive } from "../store/cat";
+import { changeActive } from "../store/categorie";
 import Product, { filterProduct } from "../store/product";
 import product, { reset } from "../store/product";
 
