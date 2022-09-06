@@ -3,7 +3,7 @@ import "./app.css";
 import NavBar from "./components/navBar.js";
 import Footer from "./components/footer/footer.js";
 import Categories from "./components/categories";
-import Products from "./components/products";
+import Products from "./components/products/products";
 
 function App() {
     return (

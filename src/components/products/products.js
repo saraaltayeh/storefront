@@ -1,7 +1,6 @@
-import { Tab } from "@mui/material";
-import Box from "@mui/material/Box";
 import { connect } from "react-redux";
-import ProductCard from "./productCard/productCard" 
+import ProductCard from "../productCard/productCard" 
+import './products.css';
 
 function Product(props) {
   let active=props.cat.cat.filter((element)=>element.normalizedName=== (props.cat.activeCat || "Food"));
@@ -10,7 +9,7 @@ function Product(props) {
   return (
     <>
     
- <h1>{active[0]?.displayName}</h1>
+ <h2>{active[0]?.displayName}</h2>
  <h3>{active[0]?.description}</h3>
 
     <div className="productContainer">
