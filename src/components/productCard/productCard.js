@@ -17,7 +17,7 @@ import {addToCart} from '../../store/cart'
 function ProductCard(props) {
 
 console.log("1111111111",props);
-console.log("55555555",props.cartItems);
+console.log("55555555",props.element);
   return (
     <>
 
@@ -52,7 +52,7 @@ console.log("55555555",props.cartItems);
                     variant="contained"
                     style={{ width: 100 + '%' }}
                     onClick={() => {
-                    props.addToCart(props.cartItems);
+                    props.addToCart(props.element);
                     }}>
                     ADD TO CART
                   </Button>
@@ -71,7 +71,7 @@ console.log("55555555",props.cartItems);
 
 const mapStateToProps = (state) => ({
     cartItems: state.cartReducer.cartItems,
-  totalCartItems: state.cartReducer.totalCartItems,
+  totalCartItems: state.cartReducer.totalCartItems
 });
 
 const mapDispatchToProps = { addToCart };

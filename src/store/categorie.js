@@ -20,7 +20,6 @@ const initialState = {
   };
   
   export default (state=initialState,action)=>{
-      // console.log("cat -- ",state.cat);
       const{type,payload}=action;
       switch(type){
           case "CHANGE":
@@ -34,7 +33,6 @@ const initialState = {
   }
   
   export const changeActive = (name) => {
-     
       return {
           type: 'CHANGE',
           payload: name

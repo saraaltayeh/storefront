@@ -4,11 +4,6 @@ import  Button from '@mui/material/Button';
 import { connect } from "react-redux";
 
 function NavBarToDo(props) {
-    // const navigate = useNavigate();
-
-    // const navigateCart = () => {
-    //     navigate('/Cart');
-    //   };
 console.log(props.totalCartItems, "totaaaaaal")
     return (
       <>
@@ -29,9 +24,5 @@ console.log(props.totalCartItems, "totaaaaaal")
 const mapStateToProps = (state) => ({
   totalCartItems: state.cartReducer.totalCartItems,
 });
-
-// function Cart() {
-//     return <h2>Cart</h2>;
-//   }
 
 export default connect(mapStateToProps)(NavBarToDo);

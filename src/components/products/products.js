@@ -22,9 +22,7 @@ function Product(props) {
     ></ProductCard>
     )
     )}
-
     </div>
-
     </>
   );
 }
@@ -32,7 +30,8 @@ function Product(props) {
 const mapStateToProps = (state) => ({
     cat: state.cat,
   product: state.product.product,
-  // totalCartItems: state.cartReducer.totalCartItems,
+  totalCartItems: state.cartReducer.totalCartItems,
+  active : state.cat.active,
   cart: state.cart
 });
 

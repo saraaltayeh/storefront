@@ -10,30 +10,26 @@ const initialState = {
     switch (type) {
       case 'addToCart':
         console.log(payload, "ppppppp");
-        let active = payload
+        let active = payload;
         let totalCartItems = state.totalCartItems +1
-        let cartItems =[...state.cartItems ,active]
+        const cartItems =[...state.cartItems ,active]
         
-        console.log(state.totalCartItems,"totalCartItems")
-        console.log(totalCartItems)
-        console.log(cartItems ,"cartItem ")
       
         return {cartItems :cartItems ,
-            totalCartItems : totalCartItems,
+            totalCartItems : totalCartItems
         } 
 
         case 'REMOVE':
             console.log(payload,"cartItems remove")
            
-             
-             
             return {
                 ...state,
                 cartItems: state.cartItems.filter(
-                  (item) => item.id !== payload
+                  (product) => product.id !== payload
                 ),
                 totalCartItems:state.totalCartItems-1
             }
+
             case 'RESET' : 
             return initialState
                    default :
@@ -56,7 +52,7 @@ const initialState = {
 
 export const remove = product => {
     return {
-      type: 'remove',
+      type: 'REMOVE',
       payload: product,
     };
     
