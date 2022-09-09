@@ -55,10 +55,9 @@ const  initialState ={
       case "FILTER":
        console.log("22222 state",member);
         var filtered = member.product.filter((element) => element.cat === payload);
-        console.log({ payload });
-        console.log({ filtered });
         return { product: filtered };
-        case "RESET":return {product:member};
+        case "RESET":
+            return {product:member};
       default:
         return initialState;
     }
@@ -78,3 +77,10 @@ const  initialState ={
       
     };
   };
+  export const reduceInventoryCount = (name) => {
+    console.log("dispatch update");
+    return {
+      type: "REDUCE",
+      payload: name,
+    };
+};
